@@ -5,18 +5,20 @@ import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
 import NewProject from './components/pages/NewProject'
 import Projects from './components/pages/Projects'
+import Container from './components/layout/Container/index';
+
 
 function App() {
   return (
-    <div className="container">
-      <Router>
-        <ul>
-          <li><Link to='/'>Home</Link> </li>
-          <li><Link to='/projects'>Projetos</Link> </li>
-          <li><Link to='/company'>Companhia</Link> </li>
-          <li><Link to='/contact'>Contatos</Link> </li>
-        </ul>
-        {/* Will be replaced for a component Header */}
+    <Router>
+      <ul>
+        <li><Link to='/'>Home</Link> </li>
+        <li><Link to='/projects'>Projetos</Link> </li>
+        <li><Link to='/company'>Companhia</Link> </li>
+        <li><Link to='/contact'>Contatos</Link> </li>
+      </ul>
+      {/* Will be replaced for a component Header */}
+      <Container customClass='min-height'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
@@ -24,10 +26,9 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/company' element={<Company />} />
         </Routes>
-        <footer>footer</footer> {/* Will be replaced for a component Footer */}
-      </  Router>
-
-    </div>
+      </Container>
+      <footer>footer</footer> {/* Will be replaced for a component Footer */}
+    </Router>
   );
 }
 
