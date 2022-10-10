@@ -1,0 +1,17 @@
+.container {
+  padding: 2rem;
+  max-width: 1024px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--column {
+  flex-flow: column;
+}
