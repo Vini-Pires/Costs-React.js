@@ -1,11 +1,20 @@
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1220px;
   width: 100%;
   margin: 0 auto;
 }
 
-.min-height {
-  min-height: 75%;
+.grow {
+  flex-grow: 1;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.column {
+  justify-content: flex-start;
+  flex-direction: column;
 }
