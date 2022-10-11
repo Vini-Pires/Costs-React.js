@@ -11,14 +11,14 @@ import Container from './components/layout/Container/index';
 function App() {
   return (
     <Router>
-      <ul>
-        <li><Link to='/'>Home</Link> </li>
-        <li><Link to='/projects'>Projetos</Link> </li>
-        <li><Link to='/company'>Companhia</Link> </li>
-        <li><Link to='/contact'>Contatos</Link> </li>
-      </ul>
+      <div>
+        <Link to='/'>Home</Link>
+        <Link to='/projects'>Projetos</Link> 
+        <Link to='/company'>Companhia</Link> 
+        <Link to='/contact'>Contatos</Link> 
+      </div>
       {/* Will be replaced for a component Header */}
-      <Container customClass='min-height'>
+      <Container customClass='grow'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
