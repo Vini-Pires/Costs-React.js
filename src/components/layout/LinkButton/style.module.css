@@ -1,0 +1,28 @@
+.btn_simple {
+  background: var(--color-dark);
+  border-radius: 10px;
+  box-shadow: 0 0 0 0 rgba(33, 33, 33, 1);
+  color: var(--color-light);
+  cursor: pointer;
+  align-self: center;
+  max-width: max-content;
+  text-align: center;
+  text-decoration: none;
+  transition: 300ms;
+  padding: .5rem 1rem;
+  
+  animation: pulse 2s ease infinite;
+}
+
+.btn_simple:hover {
+  color: var(--color-contrast);
+  transition: 300ms;
+
+  animation-play-state: paused;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(33, 33, 33, 0);
+  }
+}
