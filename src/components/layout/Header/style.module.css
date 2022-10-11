@@ -1,0 +1,21 @@
+.nav_bar {
+  display: flex;
+  padding: 1rem;
+  background: var(--color-dark);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: var(--color-contrast);
+  transition: 200ms;
+}
