@@ -15,3 +15,8 @@ html, body, #root {
 li {
   list-style: none;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
