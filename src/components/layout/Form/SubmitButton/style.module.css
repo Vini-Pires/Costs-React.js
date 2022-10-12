@@ -1,0 +1,19 @@
+.btn {
+  align-self: center;
+  background: var(--color-dark);
+  border-radius: 10px;
+  color: var(--color-light);
+  cursor: pointer;
+  max-width: max-content;
+  text-align: center;
+  text-decoration: none;
+  transition: 300ms;
+  padding: .5rem 1rem;
+}
+
+.btn:hover {
+  color: var(--color-contrast);
+  transition: 300ms;
+  
+  animation-play-state: paused;
+}
