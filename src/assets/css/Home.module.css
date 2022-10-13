@@ -1,0 +1,45 @@
+.home {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home_container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.article h1 {
+  font-size: 2.5rem;
+}
+
+.article h1 span {
+  color: var(--color-contrast);
+  background: url(../img/bg_stars.png) center / 300%;
+  border-radius: 10px;
+  padding: .3rem;
+
+  /* make animation */
+}
+
+.article p {
+  color: var(--color-light-contrast);
+}
+
+
+
+.img {
+  align-self: flex-end;
+  height: auto;
+  max-width: 45%;
+}
+

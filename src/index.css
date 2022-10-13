@@ -1,13 +1,32 @@
 * {
   border: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   color: inherit;
 }
 
 html, body, #root {
-  background: #efefef;
+  background: var(--color-light);
   height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }
