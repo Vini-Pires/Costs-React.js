@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from '../Container/index'
+import Container from '../Container'
 import ImportedIcons from '../../../assets/icons/icons'
 import style from './style.module.css'
 

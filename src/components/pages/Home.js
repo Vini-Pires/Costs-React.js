@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkButton from '../layout/LinkButton/index'
+import LinkButton from '../layout/LinkButton'
 import style from '../../assets/css/Home.module.css'
 import savings from '../../assets/img/savings.svg'
 
