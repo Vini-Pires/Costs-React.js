@@ -5,9 +5,9 @@ import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
 import NewProject from './components/pages/NewProject'
 import Projects from './components/pages/Projects'
-import Container from './components/layout/Container/index';
-import Header from './components/layout/Header/index';
-import Footer from './components/layout/Footer/index';
+import Container from './components/layout/Container';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
 
 function App() {
