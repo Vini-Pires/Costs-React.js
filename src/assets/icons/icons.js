@@ -1,5 +1,5 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'
-import { BsFillTrashFill, BsPencil } from 'react-icons/bs' 
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
+import { BsFillTrashFill, BsPencil } from "react-icons/bs"
 
 const ImportedIcons = {
   FACEBOOK: FaFacebook,
@@ -7,7 +7,7 @@ const ImportedIcons = {
   TWITTER: FaTwitter,
   LINKEDIN: FaLinkedin,
   TRASH: BsFillTrashFill,
-  PENCIL:   BsPencil,
+  PENCIL: BsPencil,
 }
 
 export default ImportedIcons

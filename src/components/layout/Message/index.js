@@ -1,12 +1,11 @@
-import React from 'react'
-import { useState, useEffect } from "react";
-import style from './style.module.css'
+import React from "react"
+import { useState, useEffect } from "react"
+import style from "./style.module.css"
 
-const Message = ({type, message}) => {
-
+const Message = ({ type, message }) => {
   const [visible, setVisible] = useState(false)
 
-  useEffect(()=>{
+  useEffect(() => {
     if (!message) {
       setVisible(false)
       return
@@ -14,19 +13,18 @@ const Message = ({type, message}) => {
       setVisible(true)
     }
 
-    const timer = setTimeout(()=>{
+    const timer = setTimeout(() => {
       setVisible(false)
     }, 3000)
 
     return () => clearTimeout(timer)
-
   }, [message])
 
   return (
     <>
-     {visible && (
-      <span className={`${style.message} ${style[type]}`}>{message}</span>
-     )}
+      {visible && (
+        <span className={`${style.message} ${style[type]}`}>{message}</span>
+      )}
     </>
   )
 }

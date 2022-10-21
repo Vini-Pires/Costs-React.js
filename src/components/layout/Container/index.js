@@ -1,8 +1,10 @@
-import style from './style.module.css'
+import style from "./style.module.css"
 
-const Container = (props) => {
+const Container = props => {
   return (
-    <div className={`${style.container} ${style[props.customClass]}`} >{props.children}</div>
+    <div className={`${style.container} ${style[props.customClass]}`}>
+      {props.children}
+    </div>
   )
 }
 
