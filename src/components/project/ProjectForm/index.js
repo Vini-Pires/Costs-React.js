@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import React from 'react'
 import style from './style.module.css'
-import Input from '../../layout/Form/Input'
-import SubmitButton from '../../layout/Form/SubmitButton'
-import Select from '../../layout/Form/Select'
+import Input from 'components/layout/Form/Input'
+import SubmitButton from 'components/layout/Form/SubmitButton'
+import Select from 'components/layout/Form/Select'
 
 const placeholderNome = 'Insira o nome do projeto'
 const placeholderValor = 'Insira o orçamento total do projeto'
@@ -28,7 +28,6 @@ const ProjectForm = ({handleSubmit, btnText, projectData}) => {
 
   const submit = (e) => {
     e.preventDefault()
-    // console.log(project)
     handleSubmit(project)
   }
 
