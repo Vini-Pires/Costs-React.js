@@ -26,9 +26,7 @@ const Message = ({type, message}) => {
     <>
      {visible && (
       <span className={`${style.message} ${style[type]}`}>{message}</span>
-     )} 
-      <span className={`${style.message} ${style[type]}`}>Projeto adicionado com sucesso</span>
-
+     )}
     </>
   )
 }

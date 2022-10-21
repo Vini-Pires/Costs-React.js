@@ -1,6 +1,6 @@
 import React from 'react'
-import Container from '../Container'
-import ImportedIcons from '../../../assets/icons/icons'
+import Container from 'components/layout/Container'
+import ImportedIcons from 'assets/icons/icons'
 import style from './style.module.css'
 
 const linkLinkedin = 'https://www.linkedin.com'

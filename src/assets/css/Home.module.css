@@ -24,7 +24,7 @@
 
 .article h1 span {
   color: var(--color-contrast);
-  background: url(../img/bg_stars.png) center / 300%;
+  background: url(assets/img/bg_stars.png) center / 300%;
   border-radius: 10px;
   padding: .3rem;
 

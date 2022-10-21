@@ -1,0 +1,93 @@
+.project_card {
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  /* margin: 0 1rem; */
+  max-height: 300px;
+  min-width: 200px;
+  padding: .5rem;
+  width: 24%;
+}
+
+.project_card_title {
+  /* font-size: 1.1rem; */
+  background: var(--color-dark);
+  border-radius: 5px;
+  color: var(--color-contrast);
+  padding: .4rem;
+}
+
+.project_card_title::first-letter {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.project_card_paragraph {
+  color: var(--color-light-contrast);
+}
+
+.project_card_paragraph span {
+  font-weight: bold;
+}
+
+.project_category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project_category span {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background: var(--color-dark);
+}
+
+.project_category .infra {
+  background: var(--color-infra);
+}
+.project_category .desenvolvimento {
+  background: var(--color-dev);
+}
+.project_category .design {
+  background: var(--color-design);
+}
+.project_category .planejamento {
+  background: var(--color-plan);
+}
+.project_category .outros {
+  background: var(--color-outros);
+}
+
+.project_card_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_card_actions a, .project_card_actions button {
+  text-decoration: none;
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  font-size: .9rem;
+  color: var(--color-dark);
+  padding: .6rem 1rem;
+  cursor: pointer;
+  justify-content: center;
+  gap: .5rem;
+  transition: .5s ease-in-out;
+}
+
+.project_card_actions a:hover{
+  background: var(--color-dark);
+  color: var(--color-contrast);
+}
+
+.project_card_actions button:hover {
+  background: var(--color-dark);
+  color: #E698A0;
+}

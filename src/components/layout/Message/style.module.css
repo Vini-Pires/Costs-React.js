@@ -1,24 +1,24 @@
 .message {
-  display: flex;
+
   padding: 1rem;
-  justify-content: center;
-  align-items: center;
   border-radius: 10px;
-  position: relative;
+  position: absolute;
+  text-align: center;
   z-index: 3;
-  top: 25%;
-  left: 100%;
-  border: 1px solid #000;
+  right: 20%;
+  left: 20%;
+  top: 10%;
+  border: 1px solid var(--color-dark);
 }
 
 .error {
-  color:#721c24;
-  background-color: #f8d7da;
+  color: var(--color-not);
+  background-color: #f8d7dade;
   border-color: #f5c6cb;
 }
 
 .success {
-  color:#155724;
-  background-color: #d4edda;
+  color: var(--color-yes);
+  background-color: #d4eddade;
   border-color: #C3e6cb;
 }

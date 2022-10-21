@@ -1,15 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import ProjectForm from '../project/ProjectForm'
+import ProjectForm from 'components/project/ProjectForm'
+import style from 'assets/css/NewProject.module.css'
 
-import style from  '../../assets/css/NewProject.module.css'
 
 const NewProject = () => {
 
   const navigate = useNavigate()
   
   const createPost = (project) => {
-    if (project.category != undefined) {
+    if (project.category !== undefined) {
       project.cost = 0
       project.service = []
   
@@ -23,7 +23,6 @@ const NewProject = () => {
       })
       .then(res => res.json())
       .then((data) => {
-        console.log(data);
         // redirect
         navigate('/projects', {state:{message: 'Projeto criado com sucesso'}})
       })
