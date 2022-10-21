@@ -11,10 +11,10 @@ const Projects = ()  => {
   let message = ''
   const [projects, setProjects] = useState([]);
   const location = useLocation()
+
   if (location.state) {
     message = location.state.message
   }
-
   useEffect(() => {
     let url = 'http://localhost:1212/projects'
     fetch(url, {

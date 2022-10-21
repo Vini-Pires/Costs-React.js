@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import ProjectForm from 'components/project/ProjectForm'
-
 import style from 'assets/css/NewProject.module.css'
+
 
 const NewProject = () => {
 

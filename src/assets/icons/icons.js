@@ -8,6 +8,7 @@ const ImportedIcons = {
   LINKEDIN: FaLinkedin,
   TRASH: BsFillTrashFill,
   PENCIL:   BsPencil,
+  LINKEDIN: FaLinkedin
 }
 
 export default ImportedIcons
