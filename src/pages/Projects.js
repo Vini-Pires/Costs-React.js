@@ -7,11 +7,11 @@ import ProjectCard from "components/project/ProjectCard"
 import style from "assets/css/Projects.module.css"
 
 const Projects = () => {
-  const [message, setMessage] = useState("")
+  let message = ""
   const [projects, setProjects] = useState([])
   const location = useLocation()
   if (location.state) {
-    setMessage(location.state.message)
+    message = location.state.message
   }
 
   useEffect(() => {
