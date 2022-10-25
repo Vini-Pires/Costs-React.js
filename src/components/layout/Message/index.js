@@ -1,24 +1,20 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import style from "./style.module.css"
+/* eslint-disable react/jsx-no-useless-fragment */
+import React, { useState, useEffect } from 'react';
+import style from './style.module.css';
 
-const Message = ({ type, message }) => {
-  const [visible, setVisible] = useState(false)
+function Message({ type, message }) {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     if (!message) {
-      setVisible(false)
-      return
-    } else {
-      setVisible(true)
+      setVisible(false);
+      return;
     }
 
-    const timer = setTimeout(() => {
-      setVisible(false)
-    }, 3000)
-
-    return () => clearTimeout(timer)
-  }, [message])
+    setTimeout(() => {
+      setVisible(false);
+    }, 3000);
+  }, [message]);
 
   return (
     <>
@@ -26,7 +22,7 @@ const Message = ({ type, message }) => {
         <span className={`${style.message} ${style[type]}`}>{message}</span>
       )}
     </>
-  )
+  );
 }
 
-export default Message
+export default Message;

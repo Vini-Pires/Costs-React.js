@@ -1,9 +1,10 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import style from "./style.module.css"
-import ImportedIcons from "assets/icons/icons"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ImportedIcons from 'assets/icons/icons';
+import style from './style.module.css';
 
-const ProjectCard = ({ name, budget, category, id, handleRemove }) => {
+// eslint-disable-next-line no-unused-vars
+function ProjectCard({ name, budget, category, id, handleRemove }) {
   return (
     <div id={id} className={style.project_card}>
       <h4 className={style.project_card_title}>{name}</h4>
@@ -14,19 +15,19 @@ const ProjectCard = ({ name, budget, category, id, handleRemove }) => {
         <p
           className={`${style.project_card_paragraph} ${style.project_category}`}
         >
-          <span className={style[category.toLowerCase()]}></span> {category}
+          <span className={style[category.toLowerCase()]} /> {category}
         </p>
       </div>
       <div className={style.project_card_actions}>
-        <Link>
+        <Link to='/editProject'>
           <ImportedIcons.PENCIL /> Editar
         </Link>
-        <button>
+        <button type='submit'>
           <ImportedIcons.TRASH /> Remover
         </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;

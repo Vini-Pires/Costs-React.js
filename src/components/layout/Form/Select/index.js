@@ -1,7 +1,7 @@
-import React from "react"
-import style from "./style.module.css"
+import React from 'react';
+import style from './style.module.css';
 
-const Select = ({ name, options, text, value, handleOnChange }) => {
+function Select({ name, options, text, value, handleOnChange }) {
   return (
     <div className={style.form_control}>
       <label htmlFor={name}>{text}</label>
@@ -9,17 +9,17 @@ const Select = ({ name, options, text, value, handleOnChange }) => {
         name={name}
         id={name}
         onChange={handleOnChange}
-        defaultValue={value || ""}
+        defaultValue={value || ''}
       >
         <option defaultValue={text}>{text}</option>
-        {options.map(option => (
+        {options.map((option) => (
           <option value={option.id} key={option.id}>
             {option.name}
           </option>
         ))}
       </select>
     </div>
-  )
+  );
 }
 
-export default Select
+export default Select;

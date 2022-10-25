@@ -7,7 +7,7 @@
   /* margin: 0 1rem; */
   max-height: 300px;
   min-width: 200px;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 24%;
 }
 
@@ -16,7 +16,7 @@
   background: var(--color-dark);
   border-radius: 5px;
   color: var(--color-contrast);
-  padding: .4rem;
+  padding: 0.4rem;
 }
 
 .project_card_title::first-letter {
@@ -67,27 +67,28 @@
   justify-content: space-between;
 }
 
-.project_card_actions a, .project_card_actions button {
+.project_card_actions a,
+.project_card_actions button {
   text-decoration: none;
   border: 1px solid var(--color-dark);
   border-radius: 5px;
   align-items: center;
   display: flex;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--color-dark);
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   justify-content: center;
-  gap: .5rem;
-  transition: .5s ease-in-out;
+  gap: 0.5rem;
+  transition: 0.5s ease-in-out;
 }
 
-.project_card_actions a:hover{
+.project_card_actions a:hover {
   background: var(--color-dark);
   color: var(--color-contrast);
 }
 
 .project_card_actions button:hover {
   background: var(--color-dark);
-  color: #E698A0;
+  color: #e698a0;
 }

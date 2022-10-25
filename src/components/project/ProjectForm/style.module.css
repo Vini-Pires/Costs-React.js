@@ -7,7 +7,8 @@
   align-items: center;
 }
 
-.label, .input_select {
+.label,
+.input_select {
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -18,9 +19,10 @@
   color: var(--color-light);
 }
 
-.input, .input_select {
+.input,
+.input_select {
   display: flex;
   height: 2rem;
   align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }

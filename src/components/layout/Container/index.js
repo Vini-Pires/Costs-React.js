@@ -1,11 +1,12 @@
-import style from "./style.module.css"
+import React from 'react';
+import style from './style.module.css';
 
-const Container = props => {
+function Container(props) {
   return (
     <div className={`${style.container} ${style[props.customClass]}`}>
       {props.children}
     </div>
-  )
+  );
 }
 
-export default Container
+export default Container;

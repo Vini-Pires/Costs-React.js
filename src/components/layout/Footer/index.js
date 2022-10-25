@@ -1,14 +1,14 @@
-import React from "react"
-import Container from "components/layout/Container"
-import ImportedIcons from "assets/icons/icons"
-import style from "./style.module.css"
+import React from 'react';
+import Container from 'components/layout/Container';
+import ImportedIcons from 'assets/icons/icons';
+import style from './style.module.css';
 
-const linkLinkedin = "https://www.linkedin.com"
-const linkInstagram = "https://www.instagram.com"
-const linkFacebook = "https://www.facebook.com"
-const linkTwitter = "https://www.twitter.com"
+const linkLinkedin = 'https://www.linkedin.com';
+const linkInstagram = 'https://www.instagram.com';
+const linkFacebook = 'https://www.facebook.com';
+const linkTwitter = 'https://www.twitter.com';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className={style.footer}>
       <Container customClass='column'>
@@ -51,7 +51,7 @@ const Footer = () => {
         </p>
       </Container>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
